@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Settings</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/settings.css">
+  </head>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black px-3">
+    <div class="container-fluid">
+        <!-- Logo Netflix -->
+        <a class="navbar-brand" href="#">
+            <img src="./assets/netflix_logo.png" alt="Netflix Logo" height="40">
+        </a>
+
+        <!-- Menu di navigazione -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-3">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">TV Shows</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Movies</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Recently Added</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">My List</a></li>
+            </ul>
+
+            <!-- Icone a destra -->
+            <div class="ms-auto d-flex align-items-center">
+                <a href="#" class="text-white me-3"><i class="bi bi-search"></i></a>
+                <a href="#" class="text-white me-3 fw-bold">KIDS</a>
+                <a href="#" class="text-white me-3"><i class="bi bi-bell"></i></a>
+
+                <!-- Menu Profilo -->
+                <div class="dropdown">
+                    <a href="#" class="text-white dropdown-toggle d-flex align-items-center" id="profileDropdown" data-bs-toggle="dropdown" role="button">
+                        <i class="bi bi-person-circle fs-4 me-1"></i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="profileDropdown">
+                        <li><a class="dropdown-item" href="#">Account</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</nav>
+
+ <!-- Sezione Account -->
+ <div class="container my-5">
+    <h2 class="fw-bold">Account</h2>
+    <hr>
+
+     <!-- Membership & Billing -->
+     <div class="row mb-2">
+        <div class="col-md-3">
+            <h5 class="fw-bold text-muted">MEMBERSHIP & BILLING</h5>
+            <button class="btn btn-light border mt-2 w-100">Cancel Membership</button>
+        </div>
+        <div class="col-md-3">
+            <p><strong>morganebugo@amicixsempre.school</strong></p>
+            <p class="text-muted">Password: ********</p>
+            <p class="text-muted">Phone: 321 044 1279</p>
+            <p><i class="bi bi-paypal"></i> morganebugo@amicixsempre.school</p>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 text-end">
+            <p><a href="#" class="text-primary">Change account email</a></p>
+            <p><a href="#" class="text-primary">Change password</a></p>
+            <p><a href="#" class="text-primary">Change phone number</a></p>
+            <p><a href="#" class="text-primary">Update payment info</a></p>
+            <p><a href="#" class="text-primary">Billing details</a></p>
+        </div>
+    </div>
+    
+    <hr>
+
+    <!-- Plan Details -->
+    <div class="row mb-4">
+        <div class="col-md-3 fw-bold text-muted">PLAN DETAILS</div>
+        <div class="col-md-3">
+            <p><strong>Premium</strong> <span class="badge bg-secondary">ULTRA HD</span></p>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 text-end">
+            <a href="#" class="text-primary">Change plan</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Settings -->
+    <div class="row mb-4">
+        <div class="col-md-3 fw-bold text-muted">SETTINGS</div>
+        <div class="col-md-3">
+            <a href="#" class="text-primary d-block">Parental controls</a>
+            <a href="#" class="text-primary d-block">Test participation</a>
+            <a href="#" class="text-primary d-block">Manage download devices</a>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 text-end">
+            <a href="#" class="text-primary d-block">Activate a device</a>
+            <a href="#" class="text-primary d-block">Recent device streaming activity</a>
+            <a href="#" class="text-primary d-block">Sign out of all devices</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- My Profile -->
+    <div class="row">
+        <div class="col-md-3 fw-bold text-muted">MY PROFILE</div>
+        <div class="col-md-3 d-flex align-items-center">
+            <img src="./assets/avatar.png" class="rounded-circle me-2" alt="Profile">
+            <strong>Bugo e Morgan</strong>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 text-end">
+            <a href="#" class="text-primary d-block">Manage profiles</a>
+            <a href="#" class="text-primary d-block">Add profile email</a>
+        </div>
+    </div>
+
+    <div class="row mt-3">
+        <div class="col-md-3"></div>
+        <div class="col-md-3">
+            <a href="#" class="text-primary d-block">Language</a>
+            <a href="#" class="text-primary d-block">Playback settings</a>
+            <a href="#" class="text-primary d-block">Subtitle appearance</a>
+        </div>
+        <div class="col-md-3"></div>
+        <div class="col-md-3 text-end">
+            <a href="#" class="text-primary d-block">Viewing activity</a>
+            <a href="#" class="text-primary d-block">Ratings</a>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
